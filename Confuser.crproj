@@ -1,0 +1,30 @@
+<project outputDir="."
+         baseDir="bin\Release\net5.0-windows"
+         xmlns="http://confuser.codeplex.com">
+  <module path="Obfuscation_WPF_App.dll">
+    <rule pattern="true">
+      <protection id="anti ildasm" />
+      <protection id="anti tamper" />
+      <protection id="constants" />
+      <protection id="ctrl flow" />
+      <protection id="anti dump" />
+      <protection id="anti debug" />
+      <protection id="invalid metadata" />
+      <protection id="ref proxy" />
+      <protection id="resources" />
+      <protection id = "rename" >
+        <argument name = "renXaml" value = "false" />
+      </protection >
+    </rule>
+  </module>
+  <probePath>C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\5.0.0\ref\net5.0</probePath>
+  <probePath>C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0</probePath>
+  <probePath>C:\Users\ABBOSBEK\.nuget\packages\messagepack.annotations\2.2.85\lib\netstandard2.0</probePath>
+  <probePath>C:\Users\ABBOSBEK\.nuget\packages\extended.wpf.toolkit\4.1.0\lib\net40</probePath>
+  <probePath>C:\Users\ABBOSBEK\.nuget\packages\materialdesignthemes\4.2.0-ci2657\lib\netcoreapp3.1</probePath>
+  <probePath>C:\Users\ABBOSBEK\.nuget\packages\microsoft.bcl.asyncinterfaces\1.0.0\ref\netstandard2.1</probePath>
+  <probePath>C:\Users\ABBOSBEK\.nuget\packages\system.text.json\5.0.2\lib\netcoreapp3.0</probePath>
+  <probePath>C:\Users\ABBOSBEK\.nuget\packages\materialdesignextensions\3.3.0\lib\netcoreapp3.1</probePath>
+  <probePath>C:\Users\ABBOSBEK\.nuget\packages\materialdesigncolors\2.0.2-ci2657\lib\netcoreapp3.1</probePath>
+  <probePath>C:\Users\ABBOSBEK\.nuget\packages\messagepack\2.2.85\lib\netcoreapp2.1</probePath>
+</project>
